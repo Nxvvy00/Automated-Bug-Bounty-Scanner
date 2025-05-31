@@ -341,18 +341,18 @@ class FuturisticScannerApp:
 
         passlist_entry = ttk.Entry(popup, width=40)
         passlist_entry.pack(pady=5)
-        passlist_entry.insert(0, "rockyou.txt")
+        passlist_entry.insert(0, "10k-most-common.txt")
 
         use_rockyou_var = tk.BooleanVar(value=True)
 
         def toggle_rockyou():
             if use_rockyou_var.get():
                 passlist_entry.delete(0, tk.END)
-                passlist_entry.insert(0, "rockyou.txt")
+                passlist_entry.insert(0, "10k-most-common.txt")
             else:
                 passlist_entry.delete(0, tk.END)
 
-        chk_rockyou = ttk.Checkbutton(popup, text="Use rockyou.txt wordlist",
+        chk_rockyou = ttk.Checkbutton(popup, text="Use 10k-most-common.txt wordlist",
                                       variable=use_rockyou_var, command=toggle_rockyou)
         chk_rockyou.pack(pady=5)
 
