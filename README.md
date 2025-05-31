@@ -68,9 +68,15 @@ Explore brute force attack options on WordPress, cPanel, or HTTP Auth via dedica
 After scans complete, review the prioritized vulnerabilities and take action!
 
 ## 📸 Screenshots
-Add your screenshots below to showcase the app’s interface and functionality.
 
-Main Scan Window	Brute Force Module
+![image](https://github.com/user-attachments/assets/2f5bfd87-fc70-4550-9fd5-a80b624a62dd)
+
+![image](https://github.com/user-attachments/assets/d52dca08-1e70-43dc-aa0c-1af8fbf5cdc9)
+
+![image](https://github.com/user-attachments/assets/3b7dfb2d-64ba-43dc-a78f-7510e259b684)
+
+![image](https://github.com/user-attachments/assets/a286e2b6-ca47-4a51-900a-de2df2588c0c)
+
 
 ## 🤝 Contributing
 Contributions are what make the open source community awesome! Feel free to:
