@@ -1,11 +1,11 @@
-## ⚡ Automated Bug Bounty Scanner ⚡
+# ⚡ Automated Bug Bounty Scanner ⚡
 
 🚀 Overview
 Welcome to Automated Bug Bounty Scanner, your all-in-one 🔍 reconnaissance and vulnerability scanning tool designed for bug bounty hunters, penetration testers, and security researchers. This Python-powered scanner automates the tedious parts of web app security testing by crawling, enumerating, and analyzing target websites with blazing speed — all wrapped in a sleek, futuristic GUI.
 
 It helps you uncover hidden admin panels, WordPress weak points, cPanel portals, and sensitive hidden files. Plus, it packs built-in brute force modules to test common authentication mechanisms, speeding up your workflow and maximizing your chances to discover valuable vulnerabilities.
 
-💡 Key Features
+## 💡 Key Features
 🌐 Intelligent Recursive Crawling:
 Efficiently explores target websites to map accessible URLs, respecting max depth and concurrency.
 
@@ -54,7 +54,7 @@ Run the scanner:
 
 python bugbounty_scanner.py
 
-# 🧭 How To Use
+## 🧭 How To Use
 Launch the app and enter your target URL (include http:// or https://).
 
 Click START SCAN to begin crawling and vulnerability enumeration.
@@ -67,12 +67,12 @@ Explore brute force attack options on WordPress, cPanel, or HTTP Auth via dedica
 
 After scans complete, review the prioritized vulnerabilities and take action!
 
-# 📸 Screenshots
+## 📸 Screenshots
 Add your screenshots below to showcase the app’s interface and functionality.
 
 Main Scan Window	Brute Force Module
 
-# 🤝 Contributing
+## 🤝 Contributing
 Contributions are what make the open source community awesome! Feel free to:
 
 Submit bug reports 🐞
@@ -91,5 +91,5 @@ Always obtain proper authorization before testing targets.
 # 📜 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 
-# 🙏 Acknowledgments
+## 🙏 Acknowledgments
 Big shoutout to the security community for continuous inspiration. Keep hunting and stay safe!
